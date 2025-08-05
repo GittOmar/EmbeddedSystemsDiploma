@@ -1,0 +1,10 @@
+.vscode/
+_build/
+cmake/
+debug/
+nbproject/
+out/
+.clang-format
+Makefile
+dist/
+build/
