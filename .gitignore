@@ -6,5 +6,4 @@ nbproject/
 out/
 .clang-format
 Makefile
-dist/
 build/
