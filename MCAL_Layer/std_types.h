@@ -30,6 +30,10 @@
 #define E_NOT_OK (Std_RetuenType)0x00
 
 #define ZERO_INIT   0x00
+
+#define  _8BIT_MAX   (uint8)  (0xFF)
+#define  _16BIT_MAX  (uint16) (0xFFFF)
+#define  _32BIT_MAX  (uint32) (0xFFFFFFFF)
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/

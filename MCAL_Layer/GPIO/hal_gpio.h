@@ -10,8 +10,8 @@
 /*****************************************
  *           Macro Declarations          *
  *****************************************/
-#define BIT_MASK (uint8)0x01
-#define ALL_REG_MASK (uint8)0xFF
+#define BIT_MASK                  (uint8)0x01
+#define ALL_REG_MASK              (uint8)0xFF
 
 #define PIN_MAX_NUMBER 8
 #define PORT_MAX_NUMBER 5

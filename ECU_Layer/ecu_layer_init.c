@@ -13,6 +13,7 @@
 /*****************************************
  *           function definition          *
  *****************************************/
-void ecu_layer_initialize(){
-     keypad_initialize(&(kp));
+Std_RetuenType ecu_layer_initialize(){
+     ret = lcd_inintialize(&(lcd));
+     return ret;
 }

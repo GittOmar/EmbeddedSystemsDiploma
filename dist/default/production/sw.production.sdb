@@ -4,77 +4,110 @@
 [d chip 18F4620 ]
 [d frameptr 4065 ]
 "21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/SevSeg/SevSeg.h
-[e E2830 . `uc
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
 "32 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/SevSeg/SevSeg.c
-[e E2834 . `uc
+[e E3001 . `uc
 OUTPUT 0
 INPUT 1
 ]
 "25 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/H_Bridge/H_Bridge.c
-[e E2891 . `uc
+[e E3058 . `uc
 NO_MOVE 0
 BACKWARD 1
 FORWARD 2
 ]
 "74
-[e E2830 . `uc
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
-"21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/led/led.c
-[e E2834 . `uc
+"25 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/KeyPad/KeyPad.c
+[e E3001 . `uc
 OUTPUT 0
 INPUT 1
 ]
 "26
-[e E2830 . `uc
+[e E2997 . `uc
+LOW 0
+HIGH 1
+]
+"21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/led/led.c
+[e E3001 . `uc
+OUTPUT 0
+INPUT 1
+]
+"26
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
 "18 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/push_button/push_button.c
-[e E2891 . `uc
+[e E3058 . `uc
 BUTTON_RELEASED 0
 BUTTON_PRESSED 1
 ]
-[e E2895 . `uc
+[e E3062 . `uc
 BUTTON_ACTIVE_HIGH 0
 BUTTON_ACTIVE_LOW 1
 ]
 "38
-[e E2830 . `uc
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
 "23 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/relay/ecu_relay.c
-[e E2834 . `uc
+[e E3001 . `uc
 OUTPUT 0
 INPUT 1
 ]
 "25
-[e E2891 . `uc
+[e E3058 . `uc
 RELAY_OFF 0
 RELAY_ON 1
 ]
 "51
-[e E2830 . `uc
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
+"21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/SevSeg/SevSeg.h
+[e E2997 . `uc
+LOW 0
+HIGH 1
+]
+"29 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/ecu_layer_init.h
+[e E3015 . `uc
+PORTA_INDEX 0
+PORTB_INDEX 1
+PORTC_INDEX 2
+PORTD_INDEX 3
+PORTE_INDEX 4
+]
+[e E3005 . `uc
+PIN0 0
+PIN1 1
+PIN2 2
+PIN3 3
+PIN4 4
+PIN5 5
+PIN6 6
+PIN7 7
+]
 "40 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/GPIO/hal_gpio.c
-[e E2834 . `uc
+[e E3001 . `uc
 OUTPUT 0
 INPUT 1
 ]
 "113
-[e E2830 . `uc
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
 "185
-[e E2848 . `uc
+[e E3015 . `uc
 PORTA_INDEX 0
 PORTB_INDEX 1
 PORTC_INDEX 2
@@ -82,19 +115,19 @@ PORTD_INDEX 3
 PORTE_INDEX 4
 ]
 "21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/SevSeg/SevSeg.h
-[e E2830 . `uc
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
-"23 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/ecu_layer_init.h
-[e E2848 . `uc
+"29 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/ecu_layer_init.h
+[e E3015 . `uc
 PORTA_INDEX 0
 PORTB_INDEX 1
 PORTC_INDEX 2
 PORTD_INDEX 3
 PORTE_INDEX 4
 ]
-[e E2838 . `uc
+[e E3005 . `uc
 PIN0 0
 PIN1 1
 PIN2 2
@@ -104,43 +137,20 @@ PIN5 5
 PIN6 6
 PIN7 7
 ]
-"25 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/KeyPad/KeyPad.c
-[e E2834 . `uc
+"24 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/Lcd/lcd.c
+[e E3001 . `uc
 OUTPUT 0
 INPUT 1
 ]
-"26
-[e E2830 . `uc
+"25
+[e E2997 . `uc
 LOW 0
 HIGH 1
 ]
-"21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/SevSeg/SevSeg.h
-[e E2830 . `uc
-LOW 0
-HIGH 1
-]
-"23 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/ecu_layer_init.h
-[e E2848 . `uc
-PORTA_INDEX 0
-PORTB_INDEX 1
-PORTC_INDEX 2
-PORTD_INDEX 3
-PORTE_INDEX 4
-]
-[e E2838 . `uc
-PIN0 0
-PIN1 1
-PIN2 2
-PIN3 3
-PIN4 4
-PIN5 5
-PIN6 6
-PIN7 7
-]
-"19 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+"21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
 [v _main main `(i  1 e 2 0 ]
-"28
-[v _application_instiallize application_instiallize `(v  1 e 1 0 ]
+"33
+[v _application_instiallize application_instiallize `(uc  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\float.c
@@ -153,6 +163,8 @@ PIN7 7
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
+"13 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_snprintf.c
+[v _snprintf snprintf `(i  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -166,17 +178,31 @@ PIN7 7
 "91 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
 "16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/ecu_layer_init.c
-[v _ecu_layer_initialize ecu_layer_initialize `(v  1 e 1 0 ]
+[v _ecu_layer_initialize ecu_layer_initialize `(uc  1 e 1 0 ]
 "69 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/H_Bridge/H_Bridge.c
 [v _motor_no_move motor_no_move `(uc  1 e 1 0 ]
 "89
 [v _motor_move_forward motor_move_forward `(uc  1 e 1 0 ]
 "108
 [v _motor_move_backward motor_move_backward `(uc  1 e 1 0 ]
-"16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/KeyPad/KeyPad.c
-[v _keypad_initialize keypad_initialize `(uc  1 e 1 0 ]
-"50
-[v _keypad_get_coordinates keypad_get_coordinates `(uc  1 e 1 0 ]
+"16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/Lcd/lcd.c
+[v _lcd_inintialize lcd_inintialize `(uc  1 e 1 0 ]
+"54
+[v _lcd_send_command lcd_send_command `(uc  1 e 1 0 ]
+"74
+[v _lcd_print_chr lcd_print_chr `(uc  1 e 1 0 ]
+"94
+[v _lcd_print_chr_pos lcd_print_chr_pos `(uc  1 e 1 0 ]
+"105
+[v _lcd_print_string lcd_print_string `(uc  1 e 1 0 ]
+"130
+[v _lcd_print_custom_chr lcd_print_custom_chr `(uc  1 e 1 0 ]
+"190
+[v _send_byte send_byte `(uc  1 s 1 send_byte ]
+"202
+[v _send_enable_signal send_enable_signal `(uc  1 s 1 send_enable_signal ]
+"214
+[v _lcd_set_cursor lcd_set_cursor `(uc  1 s 1 lcd_set_cursor ]
 "35 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/push_button/push_button.c
 [v _button_read_state button_read_state `(uc  1 e 1 0 ]
 "45 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/relay/ecu_relay.c
@@ -193,10 +219,20 @@ PIN7 7
 [v _gpio_pin_Read_logic gpio_pin_Read_logic `(uc  1 e 1 0 ]
 "164
 [v _gpio_pin_Toggle_logic gpio_pin_Toggle_logic `(uc  1 e 1 0 ]
-"22 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/app.h
+"28 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/KeyPad/KeyPad.h
+[v _keypad_values keypad_values `[4][4]uc  1 e 16 0 ]
+"24 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/ecu_layer_init.h
 [v _ret ret `uc  1 e 1 0 ]
-"23
-[v _value_recived value_recived `uc  1 e 1 0 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"29
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v _lcd lcd `S400  1 e 10 0 ]
+"28 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/app.h
+[v _O O `C[8]uc  1 e 8 0 ]
 "52 C:/Users/pc/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc/pic18f4620.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
 "189
@@ -227,94 +263,164 @@ PIN7 7
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "2268
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-"28 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/KeyPad/KeyPad.h
-[v _keypad_values keypad_values `[4][4]uc  1 e 16 0 ]
-[s S27 . 1 `uc 1 port 1 0 :3:0 
-`uc 1 pin 1 0 :3:3 
-`uc 1 direction 1 0 :1:6 
-`uc 1 logic 1 0 :1:7 
-]
-"23 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/ecu_layer_init.h
-[s S464 . 8 `[4]S27 1 row_pins 4 0 `[4]S27 1 col_pins 4 4 ]
-[v _kp kp `S464  1 e 8 0 ]
 "9 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/GPIO/hal_gpio.c
 [v _tris_register tris_register `[5]*.39VEuc  1 e 10 0 ]
 "10
 [v _lat_register lat_register `[5]*.39VEuc  1 e 10 0 ]
 "11
 [v _port_register port_register `[5]*.39VEuc  1 e 10 0 ]
-"19 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+"21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
 [v _main main `(i  1 e 2 0 ]
-{
-"25
-} 0
-"50 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/KeyPad/KeyPad.c
-[v _keypad_get_coordinates keypad_get_coordinates `(uc  1 e 1 0 ]
-{
-"59
-[v keypad_get_coordinates@col_counetr col_counetr `uc  1 a 1 13 ]
-"57
-[v keypad_get_coordinates@row_counter row_counter `uc  1 a 1 14 ]
-"55
-[v keypad_get_coordinates@col_pin_logic col_pin_logic `E2830  1 a 1 12 ]
-"56
-[v keypad_get_coordinates@flag flag `uc  1 a 1 10 ]
-"51
-[v keypad_get_coordinates@ret ret `uc  1 a 1 11 ]
-[s S27 . 1 `uc 1 port 1 0 :3:0 
-`uc 1 pin 1 0 :3:3 
-`uc 1 direction 1 0 :1:6 
-`uc 1 logic 1 0 :1:7 
-]
-"50
-[s S464 . 8 `[4]S27 1 row_pins 4 0 `[4]S27 1 col_pins 4 4 ]
-[v keypad_get_coordinates@keypad keypad `*.30CS464  1 p 1 8 ]
-[v keypad_get_coordinates@value value `*.30uc  1 p 1 9 ]
-"74
-} 0
-"145 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/GPIO/hal_gpio.c
-[v _gpio_pin_Read_logic gpio_pin_Read_logic `(uc  1 e 1 0 ]
-{
-"146
-[v gpio_pin_Read_logic@ret ret `uc  1 a 1 6 ]
-[s S27 . 1 `uc 1 port 1 0 :3:0 
-`uc 1 pin 1 0 :3:3 
-`uc 1 direction 1 0 :1:6 
-`uc 1 logic 1 0 :1:7 
-]
-"145
-[v gpio_pin_Read_logic@_pin_config _pin_config `*.30CS27  1 p 1 0 ]
-[v gpio_pin_Read_logic@logic_status logic_status `*.30E2830  1 p 1 1 ]
-"154
-} 0
-"28 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
-[v _application_instiallize application_instiallize `(v  1 e 1 0 ]
 {
 "30
 } 0
-"16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/ecu_layer_init.c
-[v _ecu_layer_initialize ecu_layer_initialize `(v  1 e 1 0 ]
+"130 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/Lcd/lcd.c
+[v _lcd_print_custom_chr lcd_print_custom_chr `(uc  1 e 1 0 ]
 {
-"18
+"136
+[v lcd_print_custom_chr@cnt cnt `uc  1 a 1 33 ]
+"131
+[v lcd_print_custom_chr@ret ret `uc  1 a 1 32 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"130
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v lcd_print_custom_chr@lcd lcd `*.30CS400  1 p 1 26 ]
+[v lcd_print_custom_chr@chr chr `*.31Cuc  1 p 1 27 ]
+[v lcd_print_custom_chr@row row `uc  1 p 1 28 ]
+[v lcd_print_custom_chr@col col `uc  1 p 1 29 ]
+[v lcd_print_custom_chr@mem_pos mem_pos `uc  1 p 1 30 ]
+"142
 } 0
-"16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/KeyPad/KeyPad.c
-[v _keypad_initialize keypad_initialize `(uc  1 e 1 0 ]
+"94
+[v _lcd_print_chr_pos lcd_print_chr_pos `(uc  1 e 1 0 ]
 {
-"28
-[v keypad_initialize@col_counetr col_counetr `uc  1 a 1 10 ]
-"24
-[v keypad_initialize@row_counter row_counter `uc  1 a 1 11 ]
+"95
+[v lcd_print_chr_pos@ret ret `uc  1 a 1 25 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"94
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v lcd_print_chr_pos@lcd lcd `*.30CS400  1 p 1 21 ]
+[v lcd_print_chr_pos@row row `uc  1 p 1 22 ]
+[v lcd_print_chr_pos@col col `uc  1 p 1 23 ]
+[v lcd_print_chr_pos@character character `uc  1 p 1 24 ]
+"103
+} 0
+"214
+[v _lcd_set_cursor lcd_set_cursor `(uc  1 s 1 lcd_set_cursor ]
+{
+"215
+[v lcd_set_cursor@ret ret `uc  1 a 1 20 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"214
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v lcd_set_cursor@lcd lcd `*.30CS400  1 p 1 17 ]
+[v lcd_set_cursor@row row `uc  1 p 1 18 ]
+[v lcd_set_cursor@col col `uc  1 p 1 19 ]
+"228
+} 0
+"74
+[v _lcd_print_chr lcd_print_chr `(uc  1 e 1 0 ]
+{
+"75
+[v lcd_print_chr@ret ret `uc  1 a 1 16 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"74
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v lcd_print_chr@lcd lcd `*.30CS400  1 p 1 14 ]
+[v lcd_print_chr@character character `uc  1 p 1 15 ]
+"92
+} 0
+"33 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+[v _application_instiallize application_instiallize `(uc  1 e 1 0 ]
+{
+"36
+} 0
+"16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/ecu_layer_init.c
+[v _ecu_layer_initialize ecu_layer_initialize `(uc  1 e 1 0 ]
+{
+"19
+} 0
+"16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/Lcd/lcd.c
+[v _lcd_inintialize lcd_inintialize `(uc  1 e 1 0 ]
+{
+"30
+[v lcd_inintialize@wire wire `uc  1 a 1 19 ]
 "17
-[v keypad_initialize@ret ret `uc  1 a 1 9 ]
+[v lcd_inintialize@ret ret `uc  1 a 1 20 ]
 [s S27 . 1 `uc 1 port 1 0 :3:0 
 `uc 1 pin 1 0 :3:3 
 `uc 1 direction 1 0 :1:6 
 `uc 1 logic 1 0 :1:7 
 ]
 "16
-[s S464 . 8 `[4]S27 1 row_pins 4 0 `[4]S27 1 col_pins 4 4 ]
-[v keypad_initialize@keypad keypad `*.30CS464  1 p 1 8 ]
-"33
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v lcd_inintialize@lcd lcd `*.30CS400  1 p 1 17 ]
+"52
+} 0
+"54
+[v _lcd_send_command lcd_send_command `(uc  1 e 1 0 ]
+{
+"55
+[v lcd_send_command@ret ret `uc  1 a 1 16 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"54
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v lcd_send_command@lcd lcd `*.30CS400  1 p 1 14 ]
+[v lcd_send_command@command command `uc  1 p 1 15 ]
+"72
+} 0
+"202
+[v _send_enable_signal send_enable_signal `(uc  1 s 1 send_enable_signal ]
+{
+"203
+[v send_enable_signal@ret ret `uc  1 a 1 9 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"202
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v send_enable_signal@lcd lcd `*.30CS400  1 p 1 8 ]
+"212
+} 0
+"190
+[v _send_byte send_byte `(uc  1 s 1 send_byte ]
+{
+"195
+[v send_byte@wire wire `uc  1 a 1 13 ]
+"191
+[v send_byte@ret ret `uc  1 a 1 12 ]
+[s S27 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"190
+[s S400 . 10 `S27 1 RS 1 0 `S27 1 E 1 1 `[8]S27 1 data_bus 8 2 ]
+[v send_byte@lcd lcd `*.30CS400  1 p 1 8 ]
+[v send_byte@command command `uc  1 p 1 9 ]
+"200
 } 0
 "113 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/GPIO/hal_gpio.c
 [v _gpio_pin_write_logic gpio_pin_write_logic `(uc  1 e 1 0 ]
@@ -329,7 +435,7 @@ PIN7 7
 "113
 [v gpio_pin_write_logic@_pin_config _pin_config `*.30CS27  1 p 1 0 ]
 "114
-[v gpio_pin_write_logic@logic_status logic_status `E2830  1 p 1 1 ]
+[v gpio_pin_write_logic@logic_status logic_status `E2997  1 p 1 1 ]
 "134
 } 0
 "59
@@ -344,6 +450,6 @@ PIN7 7
 ]
 "59
 [v gpio_pin_write_direction@pin_config pin_config `*.30CS27  1 p 1 0 ]
-[v gpio_pin_write_direction@direction direction `E2834  1 p 1 1 ]
+[v gpio_pin_write_direction@direction direction `E3001  1 p 1 1 ]
 "79
 } 0
