@@ -1,20 +1,23 @@
 /*******************************************************************************
- * @file       ecu_layer_init.c
+ * @file       mcal_layer_init.c
  * @brief      Driver/Module Description
- * @date       2025/08/05
- * @time       13:57
+ * @date       2025/08/21
+ * @time       06:55
  * @author     Omar Ibrahim
  ******************************************************************************/
 
 /*****************************************
  *                includes                *
  *****************************************/
-#include"ecu_layer_init.h"
+#include "mcal_layer_init.h"
+#include "ADC/hal_adc.h"
+#include "INTERRUPT/mcal_internal_interrupt.h"
 /*****************************************
  *           function definition          *
  *****************************************/
-Std_RetuenType ecu_layer_initialize(){
-     Std_RetuenType ret = E_OK;
-     ret &= led_initialize(&led1);
-     return ret;
+Std_RetuenType mcal_layer_initialize(void){
+    Std_RetuenType ret = E_OK;
+    hal_adc_init(&(adc_1));
+    ADC_INTERRUPT_INIT(&(adc_in));
+    return ret;
 }

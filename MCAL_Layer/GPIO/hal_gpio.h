@@ -7,6 +7,7 @@
 #include "../GPIO/hal_gpio_cfg.h"
 #include "pic18f4620.h"
 #include "../std_types.h"
+#include "../Device_config.h"
 /*****************************************
  *           Macro Declarations          *
  *****************************************/

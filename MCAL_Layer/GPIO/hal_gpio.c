@@ -3,7 +3,7 @@
  * Author: pc
  *
  * Created on June 21, 2025, 11:14 AM
- */
+ */ 
 #include "./hal_gpio.h"
 
 volatile uint8 *tris_register[] = {&TRISA, &TRISB, &TRISC, &TRISD, &TRISE};
@@ -18,7 +18,6 @@ volatile uint8 *port_register[] = {&PORTA, &PORTB, &PORTC, &PORTD, &PORTE};
  */
 
 #if PIN_PORT_CONFIGRATION == GPIO_CONFIG_ENABLE
-
 Std_RetuenType gpio_pin_direction_intialize(const pin_config_t *_pin_config) {
     Std_RetuenType ret = E_OK;
     if (_pin_config == NULL || _pin_config->pin > PIN_MAX_NUMBER - 1 ||
@@ -281,6 +280,7 @@ Std_RetuenType gpio_port_Toggle_logic(port_index_t port) {
     } else {
         *lat_register[port] ^= ALL_REG_MASK;
     }
+ 
     return ret;
 }
 #endif

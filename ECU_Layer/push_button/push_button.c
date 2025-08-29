@@ -20,7 +20,7 @@ Std_RetuenType button_intialize(const button_t *button) {
   if (button == NULL) {
     ret = E_NOT_OK;
   } else {
-    ret = gpio_pin_direction_intialize(&button->pin_cfg);
+    ret &= gpio_pin_direction_intialize(&button->pin_cfg);
   }
   return ret;
 }

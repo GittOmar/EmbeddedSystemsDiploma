@@ -13,37 +13,29 @@
  *                Includes               *
  *****************************************/
 #include "app.h"
+#include "ECU_Layer/Lcd/lcd.h"
+#include "ECU_Layer/ecu_layer_init.h"
+#include <pic18f4620.h>
 /*****************************************
  *                Code                   *
  *****************************************/
-/****************************
- *      ISR Functions        *
- ****************************/
-void my_adc_isr(){
-led_turn_toggle(&(led1));
-__delay_ms(1000);
-}
-/****************************
- *          Main            *
- ****************************/
 int main() {
     ret = application_instiallize();
-
     while (1) {
-        hal_adc_read_analog_pin(&(adc_1), ADC_AN0, &(Value));
-        voltage = (float)Value * 5.0 / 1023.0;
-        voltage_a = (uint8)voltage;
-        voltage_b = (uint8)((voltage - (float)voltage_a)*100);
+     ret = lcd_print_custom_chr(&lcd, O, 1, 11, 1);
+     ret = lcd_print_custom_chr(&lcd, M, 1, 10, 2);
+     ret = lcd_print_custom_chr(&lcd, R, 1, 9, 3);
+     ret = lcd_print_chr_pos(&lcd, 0, 0, 'A');
     }
     return ret;
 }
-/****************************
- *          Init            *
- ****************************/
+
+
 Std_RetuenType application_instiallize(void) { 
-   ret &= ecu_layer_initialize();
-   ret &= mcal_layer_initialize();
-   return ret;
+   ret = ecu_layer_initialize();
+   
+    return ret;
 }
+
 
 #endif /* main_H_ */
