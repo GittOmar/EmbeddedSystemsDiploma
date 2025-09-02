@@ -25,7 +25,11 @@
 uint16 Value;    
 float voltage;    
 uint8 voltage_a;    
-uint8 voltage_b;    
+uint8 voltage_b;
+
+uint8 adc_value[]={};
+uint8 pa[]={};
+uint8 pb[]={};
 /*****************************************
  *          Data Type Declarations       *
  *****************************************/

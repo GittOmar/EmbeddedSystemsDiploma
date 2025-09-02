@@ -37,7 +37,7 @@
 #endif
 
 
-#define LCD_ROW   4
+#define LCD_ROW   2
 #define LCD_COL   20
 
 /*****************************************

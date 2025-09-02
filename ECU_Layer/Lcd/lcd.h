@@ -82,6 +82,8 @@ pin_config_t data_bus[LCD_BIT_MODE];
  *        Function Declarations          *
  *****************************************/
 Std_RetuenType lcd_inintialize(const lcd_t *lcd);
+Std_RetuenType lcd_clear_display(const lcd_t *lcd);
+
 Std_RetuenType lcd_send_command(const lcd_t *lcd, uint8 command);
 Std_RetuenType lcd_print_chr(const lcd_t *lcd, uint8 character);
 Std_RetuenType lcd_print_chr_pos(const lcd_t *lcd, uint8 row, uint8 col, uint8 character);

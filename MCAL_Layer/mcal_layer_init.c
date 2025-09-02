@@ -10,14 +10,12 @@
  *                includes                *
  *****************************************/
 #include "mcal_layer_init.h"
-#include "ADC/hal_adc.h"
-#include "INTERRUPT/mcal_internal_interrupt.h"
 /*****************************************
  *           function definition          *
  *****************************************/
 Std_RetuenType mcal_layer_initialize(void){
     Std_RetuenType ret = E_OK;
     hal_adc_init(&(adc_1));
-    ADC_INTERRUPT_INIT(&(adc_in));
+    // ADC_INTERRUPT_INIT(&(adc_in));
     return ret;
 }

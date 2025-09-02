@@ -93,14 +93,17 @@ ADC_CONVERSION_CLK_FOSC_DIV_64
 
 
 typedef struct{
-InterruotHandler          InterruotHandler; 
+#if  (PERIORITY_ENABLE && ADC_IN_ENABLE)                     
+priority_t ADC_priority;                               
+#endif 
+#if  (ADC_IN_ENABLE)                     
+InterruotHandler          ADC_IN_Handler;                             
+#endif                        
 adc_channel_t             channel;
 adc_acquisition_time_t    acquisition_time; /** Minimum Time is 2Tad  */
 adc_clock_conversion_t    clock_conversion;
 uint8 adc_voltage_source : 1;  
 }adc_cfg_t;
-
-
 /*****************************************
  *        Function Declarations          *
  *****************************************/

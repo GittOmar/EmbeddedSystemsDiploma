@@ -65,15 +65,6 @@
  priority_t ee_priority;                               
  #endif                        
  }eeprom_IN_t;
-/****************************
- *             ADC          *
- ****************************/
- typedef struct{
- InterruotHandler ADC_InterruptHandler;
- #if  (PERIORITY_ENABLE)                     
- priority_t ADC_priority;                               
- #endif                        
- }adc_IN_t;
 /*****************************************
  *        Function Declarations          *
  *****************************************/
@@ -85,6 +76,6 @@ void           EEPROM_INTERRUPT_DEINIT(void);
 /****************************
  *             ADC          *
  ****************************/
-Std_RetuenType ADC_INTERRUPT_INIT(const adc_IN_t *ADC);
+void           ADC_INTERRUPT_INIT(priority_t adc_priority);
 void           ADC_INTERRUPT_DEINIT(void);
 #endif /* mcal_internal_interrupt_H_ */

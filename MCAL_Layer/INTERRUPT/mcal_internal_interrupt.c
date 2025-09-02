@@ -25,11 +25,9 @@ void GLOBAL_INTERUPT_ENABLE(void);
  *           INTERRUPT HANDLER           *
  *****************************************/
  InterruotHandler  EEPROM_InterruptHandler;
- InterruotHandler  ADC_InterruptHandler;
 /*****************************************
  *            Helper Functions           *
  *****************************************/
-typedef Std_RetuenType IN_REG_Functionality (uint8 Reg,uint8 bit_pos);
 Std_RetuenType Module_INTERRUPT_ENABLE(uint8 Reg,uint8 bit_pos){
   Std_RetuenType ret = E_OK;
   if((Reg > UINT8_MAX) || (bit_pos >UINT8_MAX)){
@@ -119,22 +117,15 @@ void EEPROM_INTERRUPT_DEINIT(void){
 /****************************
  *          ADC              *
  ****************************/
-Std_RetuenType ADC_INTERRUPT_INIT(const adc_IN_t *ADC){
-   Std_RetuenType ret = E_OK;
-   if(ADC == NULL){
-      ret = E_NOT_OK;
-   }else{
+void ADC_INTERRUPT_INIT(priority_t adc_priority){
         GLOBAL_INTERUPT_DISABLE();          // GIE disable
-        ret &= Module_INTERRUPT_ClEAR_FLAG(ADC_FLAG_REG,ADC_FLAG_BIT);               // flag clear
-        ret &= Module_INTERRUPT_ENABLE(ADC_ENABLE_REG,ADC_ENABLE_BIT);        // Interrupt enable
+        Module_INTERRUPT_ClEAR_FLAG(ADC_FLAG_REG,ADC_FLAG_BIT);               // flag clear
+        Module_INTERRUPT_ENABLE(ADC_ENABLE_REG,ADC_ENABLE_BIT);        // Interrupt enable
         #if  (PERIORITY_ENABLE)      
         INTERRUPT_PeriorityEnable();     // priority enable           
-        ret &= SET_Interrupt_PRIORITY(ADC->ADC_priority,ADC_PRIORITY_REG,ADC_PRIORITY_BIT);        // priority set 
+        SET_Interrupt_PRIORITY(adc_priority,ADC_PRIORITY_REG,ADC_PRIORITY_BIT);        // priority set 
         #endif                        
-        ADC_InterruptHandler = ADC->ADC_InterruptHandler;   // ISR address
         GLOBAL_INTERUPT_ENABLE();          // GIE Enable
-   }
-   return ret;
 }
 void           ADC_INTERRUPT_DEINIT(void){
    Module_INTERRUPT_DISABLE(ADC_ENABLE_REG,ADC_ENABLE_BIT);        // Interrupt enable
@@ -148,8 +139,4 @@ void           ADC_INTERRUPT_DEINIT(void){
    EEPROM_InterruptHandler();
  }
 
- void ADC_ISR(void); 
- void ADC_ISR(){
-   Module_INTERRUPT_ClEAR_FLAG(ADC_FLAG_REG,ADC_FLAG_BIT);               // flag clear
-   ADC_InterruptHandler();
- }
+

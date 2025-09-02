@@ -31,9 +31,22 @@ int main() {
 
     while (1) {
         hal_adc_read_analog_pin(&(adc_1), ADC_AN0, &(Value));
-        voltage = (float)Value * 5.0 / 1023.0;
+
+        voltage = (float)Value * 4.77 / 1023.0;
         voltage_a = (uint8)voltage;
-        voltage_b = (uint8)((voltage - (float)voltage_a)*100);
+        voltage_b = (uint8)((voltage - (float)voltage_a)*100.0);
+
+        lcd_print_string_pos(&(view), 0, 0, "Voltage =  ");
+
+        convert_uint8_to_str(voltage_a , pa);
+        lcd_print_string(&(view), pa);  
+        lcd_print_chr(&(view), '.');
+       convert_uint8_to_str(voltage_b , pb);
+        lcd_print_string(&(view), pb);
+
+        __delay_ms(200);
+        lcd_clear_display(&(view));
+           
     }
     return ret;
 }

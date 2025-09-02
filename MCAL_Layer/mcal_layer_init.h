@@ -30,12 +30,11 @@ Std_RetuenType mcal_layer_initialize(void);
  adc_cfg_t  adc_1 = {
     .acquisition_time = ADC_4_TAD,
     .adc_voltage_source = INTERNAL_VOLTAGE_SOURECE ,
-    .channel = ADC_AN9,
-    .clock_conversion = ADC_CONVERSION_CLK_FOSC_DIV_8
+    .channel = ADC_AN12,
+    .clock_conversion = ADC_CONVERSION_CLK_FOSC_DIV_2,
+    .ADC_IN_Handler = &my_adc_isr
  };
-adc_IN_t  adc_in = {
-   .ADC_InterruptHandler = &my_adc_isr
-};
+
 /*****************************************
  *          Data Type Declarations       *
  *****************************************/

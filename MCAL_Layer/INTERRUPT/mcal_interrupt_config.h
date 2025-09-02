@@ -81,12 +81,10 @@ FALLING_EDGE,
 RISSING_EDGE
 }edge_t;
 
-#ifdef  PERIORITY_ENABLE
 typedef enum{
 LOW_PRIORITY,
 HIGH_PRIORITY
 }priority_t;
-#endif
 /*****************************************
  *        Function Declarations          *
  *****************************************/

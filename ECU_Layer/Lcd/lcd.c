@@ -21,32 +21,32 @@ Std_RetuenType lcd_inintialize(const lcd_t *lcd){
     /****************************
      *    intializing pins      *
      ****************************/
-    ret = gpio_pin_write_direction(&(lcd->RS),OUTPUT);
-    ret = gpio_pin_write_logic(&(lcd->RS),LOW);
+    ret &= gpio_pin_write_direction(&(lcd->RS),OUTPUT);
+    ret &= gpio_pin_write_logic(&(lcd->RS),LOW);
 
-    ret = gpio_pin_write_direction(&(lcd->E),OUTPUT);
-    ret = gpio_pin_write_logic(&(lcd->E),LOW);
+    ret &= gpio_pin_write_direction(&(lcd->E),OUTPUT);
+    ret &= gpio_pin_write_logic(&(lcd->E),LOW);
 
     for(uint8 wire = ZERO_INIT; wire <LCD_BIT_MODE; wire++){
-     ret = gpio_pin_write_direction(&(lcd->data_bus[wire]),OUTPUT);
-     ret = gpio_pin_write_logic(&(lcd->data_bus[wire]),LOW);
+     ret &= gpio_pin_write_direction(&(lcd->data_bus[wire]),OUTPUT);
+     ret &= gpio_pin_write_logic(&(lcd->data_bus[wire]),LOW);
     }
     /****************************
      *    intializing sequance  *
      ****************************/
     __delay_ms(15);
-    ret = lcd_send_command(lcd, LCD_2_LINE_COMMAND);
+    ret &= lcd_send_command(lcd, LCD_2_LINE_COMMAND);
     __delay_ms(5);
-    ret = lcd_send_command(lcd, LCD_2_LINE_COMMAND);
+    ret &= lcd_send_command(lcd, LCD_2_LINE_COMMAND);
     __delay_us(150);
-    ret = lcd_send_command(lcd, LCD_2_LINE_COMMAND);
+    ret &= lcd_send_command(lcd, LCD_2_LINE_COMMAND);
     /****************************
      * intializing environment  *
      ****************************/
-    ret = lcd_send_command(lcd,LCD_CLEAR_DISPLAY);
-    ret = lcd_send_command(lcd,LCD_CURSOR_HOME);
-    ret = lcd_send_command(lcd, LCD_ENTRY_MODE_INC_SHIFT_OFF);
-    ret = lcd_send_command(lcd,LCD_BLOCK_CURSOR_OFF_UNDERLINE_CURSOR_OFF);
+    ret &= lcd_send_command(lcd,LCD_CLEAR_DISPLAY);
+    ret &= lcd_send_command(lcd,LCD_CURSOR_HOME);
+    ret &= lcd_send_command(lcd, LCD_ENTRY_MODE_INC_SHIFT_OFF);
+    ret &= lcd_send_command(lcd,LCD_BLOCK_CURSOR_OFF_UNDERLINE_CURSOR_OFF);
     }
  return ret;
 }
@@ -67,6 +67,16 @@ Std_RetuenType lcd_send_command(const lcd_t *lcd, uint8 command){
         ret = send_byte(lcd, command);
         ret = send_enable_signal(lcd);
         #endif
+    }
+    return ret;
+}
+
+Std_RetuenType lcd_clear_display(const lcd_t *lcd){
+    Std_RetuenType ret = E_NOT_OK;
+    if(lcd == NULL){
+        ret = E_NOT_OK;
+    }else{
+        ret = lcd_send_command(lcd,LCD_CLEAR_DISPLAY);
     }
     return ret;
 }
