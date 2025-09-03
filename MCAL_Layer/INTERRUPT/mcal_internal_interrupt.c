@@ -18,8 +18,8 @@ void GLOBAL_INTERUPT_ENABLE(void);
 /*****************************************
  *            User Definced Var          *
  *****************************************/
- volatile uint8 *E_Reg [] = {&PIE2, &PIE1};
- volatile uint8 *F_Reg [] = {&PIR2, &PIR1};
+ volatile uint8 *E_Reg [] = {&PIE2, &PIE1,&INTCON};
+ volatile uint8 *F_Reg [] = {&PIR2, &PIR1,&INTCON};
  volatile uint8 *P_Reg [] = {&IPR2, &IPR1};
 /*****************************************
  *           INTERRUPT HANDLER           *
@@ -130,6 +130,21 @@ void ADC_INTERRUPT_INIT(priority_t adc_priority){
 void           ADC_INTERRUPT_DEINIT(void){
    Module_INTERRUPT_DISABLE(ADC_ENABLE_REG,ADC_ENABLE_BIT);        // Interrupt enable
 }
+/****************************
+ *          TIMER0          *
+ ****************************/
+ void TIMER0_IN_INT(){
+ GLOBAL_INTERUPT_DISABLE();
+ Module_INTERRUPT_ClEAR_FLAG(TIMER0_FLAG_REG,TIMER0_FLAG_BIT);                  
+ Module_INTERRUPT_ENABLE(TIMER0_ENABLE_REG,TIMER0_ENABLE_BIT);
+ #if  (PERIORITY_ENABLE)                     
+ INTERRUPT_PeriorityEnable();                            
+ #endif    
+ GLOBAL_INTERUPT_ENABLE();          // GIE Enable
+ }
+ void TIMER0_IN_DEINIT(){
+ Module_INTERRUPT_DISABLE(TIMER0_FLAG_REG,TIMER0_FLAG_BIT);
+ }
 /*****************************************
  *                ISR                    *
  *****************************************/

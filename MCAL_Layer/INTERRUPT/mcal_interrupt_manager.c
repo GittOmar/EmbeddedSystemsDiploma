@@ -125,8 +125,15 @@ RB7_F_ISR();
  /****************************
   *          ADC             *
   ****************************/
-   if((ADC_FLAG == INTERRUPR_OCUUR) && (ADC_Enable == INTERRUPT_ENABLE)){
+ if((ADC_FLAG == INTERRUPR_OCUUR) && (ADC_Enable == INTERRUPT_ENABLE)){
     ADC_ISR();
  }
+ /****************************
+  *          TIMER0          *
+  ****************************/
+ if((TIMER0_FLAG == INTERRUPR_OCUUR) && (TIMER0_Enable == INTERRUPT_ENABLE)){
+   TIMER0_ISR();
+ }
+
 }
 #endif

@@ -21,6 +21,7 @@
  *****************************************/
 #define FIRST_REG      0x00
 #define SECOND_REG     0x01
+#define THIRD_REG      0x02
 
 #define bit_0          0X00          
 #define bit_1          0X01        
@@ -50,6 +51,14 @@
 #define  ADC_ENABLE_BIT     bit_6
 #define  ADC_FLAG_BIT       bit_6
 #define  ADC_PRIORITY_BIT   bit_6
+/****************************
+ *          Timer0          *
+ ****************************/
+#define  TIMER0_ENABLE_REG     THIRD_REG
+#define  TIMER0_FLAG_REG       THIRD_REG
+
+#define  TIMER0_ENABLE_BIT     bit_5
+#define  TIMER0_FLAG_BIT       bit_2
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/        
@@ -76,6 +85,4 @@ void           EEPROM_INTERRUPT_DEINIT(void);
 /****************************
  *             ADC          *
  ****************************/
-void           ADC_INTERRUPT_INIT(priority_t adc_priority);
-void           ADC_INTERRUPT_DEINIT(void);
 #endif /* mcal_internal_interrupt_H_ */

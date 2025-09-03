@@ -27,21 +27,6 @@
 led_t  led1 = {.port = PORTC_INDEX, 
                .pin = PIN0, 
                .status = LED_OFF};
-               lcd_t view = {
-.data_bus ={
-
-    [0] ={.port = PORTA_INDEX , .pin = PIN2},
-    [1] ={.port = PORTA_INDEX , .pin = PIN3},
-    [2] ={.port = PORTA_INDEX , .pin = PIN4},
-    [3] ={.port = PORTA_INDEX , .pin = PIN5},
-    [4] ={.port = PORTD_INDEX , .pin = PIN0},
-    [5] ={.port = PORTD_INDEX , .pin = PIN1},
-    [6] ={.port = PORTD_INDEX , .pin = PIN3},
-    [7] ={.port = PORTC_INDEX , .pin = PIN4},
-},
-.RS = {.port = PORTB_INDEX , .pin = PIN4},
-.E  = {.port = PORTB_INDEX , .pin = PIN5}
-};
 /*****************************************
  *        Function Declarations          *
  *****************************************/

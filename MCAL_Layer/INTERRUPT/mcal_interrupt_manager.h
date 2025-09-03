@@ -13,7 +13,6 @@
  *                 Includes              *
  *****************************************/
 #include "mcal_interrupt_config.h"
-#include <errno.h>
 /*****************************************
  *           Macro Declarations          *
  *****************************************/
@@ -37,15 +36,11 @@
 #define  EEPROM_FLAG                      (PIR2bits.EEIF)  
 #define  EEPROM_Enable                    (PIE2bits.EEIE)
 
-#define  ADC_FLAG                      (PIR1bits.ADIF)  
-#define  ADC_Enable                    (PIE1bits.ADIE)
-/****************************
- *          OTHER          *
- ****************************/
-#define  FLAG_HIGH   0x01   
-#define  FLAG_LOW    0x00   
+#define  ADC_FLAG                         (PIR1bits.ADIF)  
+#define  ADC_Enable                       (PIE1bits.ADIE)
 
-#define _XTAL_FREQ 8000000UL
+#define  TIMER0_FLAG                      (INTCONbits.TMR0IF)  
+#define  TIMER0_Enable                    (INTCONbits.TMR0IE)  
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/
@@ -54,14 +49,9 @@
  ****************************/
 #define  EXT_RBx_PinState(x)             PORTBbits.RB##x
 #define  RB_FLAG(x)     (x-4)
-/****************************
- *         INTERNAL         *
- ****************************/
-
 /*****************************************
  *          Data Type Declarations       *
  *****************************************/
-
 /*****************************************
  *        Function Declarations          *
  *****************************************/
@@ -90,4 +80,5 @@ void RB7_F_ISR(void);
  ****************************/
  void EEPROM_ISR(void);
  void ADC_ISR(void);
+ void TIMER0_ISR(void);
 #endif /* mcal_interrupt_manager_H_ */

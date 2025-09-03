@@ -13,40 +13,27 @@
  *                Includes               *
  *****************************************/
 #include "app.h"
+#include "MCAL_Layer/std_types.h"
+#include <builtins.h>
 /*****************************************
  *                Code                   *
  *****************************************/
+ uint16 cnt = 0;
 /****************************
  *      ISR Functions        *
  ****************************/
-void my_adc_isr(){
-led_turn_toggle(&(led1));
-__delay_ms(1000);
+void my_tt(){
+//  led_turn_toggle(&(led1));
 }
 /****************************
  *          Main            *
  ****************************/
 int main() {
     ret = application_instiallize();
-
     while (1) {
-        hal_adc_read_analog_pin(&(adc_1), ADC_AN0, &(Value));
-
-        voltage = (float)Value * 4.77 / 1023.0;
-        voltage_a = (uint8)voltage;
-        voltage_b = (uint8)((voltage - (float)voltage_a)*100.0);
-
-        lcd_print_string_pos(&(view), 0, 0, "Voltage =  ");
-
-        convert_uint8_to_str(voltage_a , pa);
-        lcd_print_string(&(view), pa);  
-        lcd_print_chr(&(view), '.');
-       convert_uint8_to_str(voltage_b , pb);
-        lcd_print_string(&(view), pb);
-
-        __delay_ms(200);
-        lcd_clear_display(&(view));
-           
+    hal_timer0_write_value(0);
+    __delay_ms(1000);
+    hal_timer0_read_value(&(cnt));
     }
     return ret;
 }

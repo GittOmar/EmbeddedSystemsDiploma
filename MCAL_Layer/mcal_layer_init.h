@@ -16,6 +16,7 @@
 #include "INTERRUPT/mcal_internal_interrupt.h"
 #include "./EEPROM/./EEPROM.h"
 #include "./ADC/hal_adc.h"
+#include "./TIMER0/hal_timer0.h"
 /*****************************************
  *           Macro Declarations          *
  *****************************************/
@@ -23,17 +24,18 @@
  *        Function Declarations          *
  *****************************************/
 void  my_adc_isr();
+void my_tt(void);
 Std_RetuenType mcal_layer_initialize(void);
 /*****************************************
  *               Modules                 *
  *****************************************/
- adc_cfg_t  adc_1 = {
-    .acquisition_time = ADC_4_TAD,
-    .adc_voltage_source = INTERNAL_VOLTAGE_SOURECE ,
-    .channel = ADC_AN12,
-    .clock_conversion = ADC_CONVERSION_CLK_FOSC_DIV_2,
-    .ADC_IN_Handler = &my_adc_isr
- };
+timer0_t my_t = {
+   .timer0_operation_mode = TIMER0_COUNTER_MODE,
+   .timer0_register_size  = TIMER0_8BIT_REG_SIZE,
+   .timer0_prescaler = TIMER0_PRESCALER_OFF,
+   .timer0_interupt_handler = &my_tt,
+   .timer0_PreLoaded_Value = 0x00
+};
 
 /*****************************************
  *          Data Type Declarations       *

@@ -18,6 +18,9 @@
 
   Std_RetuenType Module_INTERRUPT_ClEAR_FLAG(uint8 Reg,uint8 bit_pos);
   InterruotHandler  ADC_InterruptHandler;
+
+void     ADC_INTERRUPT_INIT(priority_t adc_priority);
+void     ADC_INTERRUPT_DEINIT(void);
 /*****************************************
  *             Helper Functions          *
  *****************************************/
@@ -181,7 +184,6 @@ Std_RetuenType hal_adc_read_analog_pin(const adc_cfg_t *ADC,adc_channel_t UsedCh
  *                ISR                    *
  *****************************************/
  #if  (ADC_IN_ENABLE)                     
- void ADC_ISR(void); 
  void ADC_ISR(){
    Module_INTERRUPT_ClEAR_FLAG(ADC_FLAG_REG,ADC_FLAG_BIT);               // flag clear
    ADC_InterruptHandler();
