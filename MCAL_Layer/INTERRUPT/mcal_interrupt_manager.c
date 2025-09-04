@@ -24,13 +24,10 @@
 void __interrupt()InterruptManaerHigh(void){
 if((EXT_IN0_InterruptState == INTERRUPT_ENABLE) && (EXT_IN0_FlagState == INTERRUPR_OCUUR)){
  IN0_ISR();
- __delay_ms(500);
 }
 
 if((EXT_IN2_InterruptState == INTERRUPT_ENABLE) && (EXT_IN2_FlagState == INTERRUPR_OCUUR)){
 IN2_ISR();
- __delay_ms(500);
-
 }
 }
 /****************************
@@ -39,8 +36,6 @@ IN2_ISR();
 void __interrupt(low_priority)InterruptManaerLow(void){
 if((EXT_IN1_InterruptState == INTERRUPT_ENABLE) && (EXT_IN1_FlagState == INTERRUPR_OCUUR)){
 IN1_ISR();
- __delay_ms(500);
-
 }    
 }
 #else
@@ -134,6 +129,11 @@ RB7_F_ISR();
  if((TIMER0_FLAG == INTERRUPR_OCUUR) && (TIMER0_Enable == INTERRUPT_ENABLE)){
    TIMER0_ISR();
  }
-
+ /****************************
+  *          TIMER1          *
+  ****************************/
+  if((TIMER1_FLAG == INTERRUPR_OCUUR) && (TIMER1_Enable == INTERRUPT_ENABLE)){
+   TIMER1_ISR();
+ }
 }
 #endif

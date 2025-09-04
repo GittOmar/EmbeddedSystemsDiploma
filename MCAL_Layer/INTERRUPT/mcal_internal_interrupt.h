@@ -59,6 +59,16 @@
 
 #define  TIMER0_ENABLE_BIT     bit_5
 #define  TIMER0_FLAG_BIT       bit_2
+/****************************
+ *          TIMER1          *
+ ****************************/
+#define  TIMER1_ENABLE_REG     SECOND_REG
+#define  TIMER1_FLAG_REG       SECOND_REG
+#define  TIMER1_PRIORITY_REG   SECOND_REG
+
+#define  TIMER1_ENABLE_BIT     bit_0
+#define  TIMER1_FLAG_BIT       bit_0
+#define  TIMER1_PRIORITY_BIT   bit_0
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/        

@@ -13,8 +13,6 @@
  *                Includes               *
  *****************************************/
 #include "app.h"
-#include "MCAL_Layer/std_types.h"
-#include <builtins.h>
 /*****************************************
  *                Code                   *
  *****************************************/
@@ -22,18 +20,19 @@
 /****************************
  *      ISR Functions        *
  ****************************/
-void my_tt(){
-//  led_turn_toggle(&(led1));
+void my_t1(){
+// led_turn_toggle(&(led1));
 }
+
 /****************************
  *          Main            *
  ****************************/
 int main() {
     ret = application_instiallize();
     while (1) {
-    hal_timer0_write_value(0);
-    __delay_ms(1000);
-    hal_timer0_read_value(&(cnt));
+    hal_Timer1_Write_value(&(t1c), 0); 
+     __delay_ms(1000);
+     hal_Timer1_Read_value(&(t1c), &cnt);
     }
     return ret;
 }

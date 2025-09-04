@@ -145,6 +145,22 @@ void           ADC_INTERRUPT_DEINIT(void){
  void TIMER0_IN_DEINIT(){
  Module_INTERRUPT_DISABLE(TIMER0_FLAG_REG,TIMER0_FLAG_BIT);
  }
+ /****************************
+  *          TImer1          *
+  ****************************/
+ void Timer1_IN_init(priority_t Timer1_priority){
+  GLOBAL_INTERUPT_DISABLE();
+  Module_INTERRUPT_ClEAR_FLAG(TIMER1_FLAG_REG,TIMER1_FLAG_BIT);  
+  #if  (PERIORITY_ENABLE)      
+  INTERRUPT_PeriorityEnable();     // priority enable           
+  SET_Interrupt_PRIORITY(Timer1_priority,TIMER1_PRIORITY_REG,TIMER1_PRIORITY_BIT);        // priority set 
+  #endif                                        
+  Module_INTERRUPT_ENABLE(TIMER1_ENABLE_REG,TIMER1_ENABLE_BIT);
+  GLOBAL_INTERUPT_ENABLE();
+ }
+ void Timer1_IN_deinit(){
+  Module_INTERRUPT_DISABLE(TIMER1_ENABLE_REG,TIMER1_ENABLE_BIT);
+ }
 /*****************************************
  *                ISR                    *
  *****************************************/

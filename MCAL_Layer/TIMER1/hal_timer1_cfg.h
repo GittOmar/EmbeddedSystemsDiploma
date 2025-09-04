@@ -1,36 +1,37 @@
-/*
- * File:   app.h
- * Author: pc
- *
- * Created on June 21, 2025, 11:11 AM
- */
+/*******************************************************************************
+ * @file       hal_timer1_cfg.h
+ * @brief      Driver/Module Description
+ * @date       2025/09/04
+ * @time       10:13
+ * @author     Omar Ibrahim
+ ******************************************************************************/
 
-#ifndef APP_H
-#define APP_H
+#ifndef hal_timer1_cfg_H_
+#define hal_timer1_cfg_H_
 
 /*****************************************
  *                 Includes              *
  *****************************************/
-#include "ECU_Layer/ecu_layer_init.h"
-#include "MCAL_Layer/mcal_layer_init.h"
-#include "MCAL_Layer/std_types.h"
+
+
 /*****************************************
  *           Macro Declarations          *
  *****************************************/
-#define _XTAL_FREQ 8000000UL
+
+
 /*****************************************
- *       User Defined Varibles         *
- *****************************************/ 
- Std_RetuenType ret = E_OK; 
+ *       Macro Function Declarations     *
+ *****************************************/
+
+
 /*****************************************
  *          Data Type Declarations       *
  *****************************************/
+
+
 /*****************************************
  *        Function Declarations          *
  *****************************************/
-Std_RetuenType application_instiallize(void);
 
 
-
-#endif /* APP_H */
-
+#endif /* hal_timer1_cfg_H_ */

@@ -41,6 +41,9 @@
 
 #define  TIMER0_FLAG                      (INTCONbits.TMR0IF)  
 #define  TIMER0_Enable                    (INTCONbits.TMR0IE)  
+
+#define  TIMER1_FLAG                      (PIR1bits.TMR1IF)  
+#define  TIMER1_Enable                    (PIE1bits.TMR1IE)  
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/
@@ -49,9 +52,6 @@
  ****************************/
 #define  EXT_RBx_PinState(x)             PORTBbits.RB##x
 #define  RB_FLAG(x)     (x-4)
-/*****************************************
- *          Data Type Declarations       *
- *****************************************/
 /*****************************************
  *        Function Declarations          *
  *****************************************/
@@ -81,4 +81,5 @@ void RB7_F_ISR(void);
  void EEPROM_ISR(void);
  void ADC_ISR(void);
  void TIMER0_ISR(void);
+ void TIMER1_ISR(void);
 #endif /* mcal_interrupt_manager_H_ */

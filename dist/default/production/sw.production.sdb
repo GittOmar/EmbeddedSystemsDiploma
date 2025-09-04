@@ -53,17 +53,12 @@ ADC_CONVERSION_CLK_FOSC_DIV_64 6
 LOW_PRIORITY 0
 HIGH_PRIORITY 1
 ]
-"32 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/mcal_layer_init.h
-[e E3168 . `uc
-TIMER0_PRESCALER_VAULE_1_div_2 0
-TIMER0_PRESCALER_VAULE_1_div_4 1
-TIMER0_PRESCALER_VAULE_1_div_8 2
-TIMER0_PRESCALER_VAULE_1_div_16 3
-TIMER0_PRESCALER_VAULE_1_div_32 4
-TIMER0_PRESCALER_VAULE_1_div_64 5
-TIMER0_PRESCALER_VAULE_1_div_128 6
-TIMER0_PRESCALER_VAULE_1_div_256 7
-TIMER0_PRESCALER_OFF 8
+"51 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/mcal_layer_init.h
+[e E3196 . `uc
+TIMER1_PRESCALER_OFF 0
+TIMER1_PRESCALER_1_div_2 1
+TIMER1_PRESCALER_1_div_4 2
+TIMER1_PRESCALER_1_div_8 3
 ]
 "25 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/H_Bridge/H_Bridge.c
 [e E3058 . `uc
@@ -201,7 +196,7 @@ INX_NULL 3
 LOW_PRIORITY 0
 HIGH_PRIORITY 1
 ]
-"73 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_interrupt_manager.c
+"68 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_interrupt_manager.c
 [e E3003 . `uc
 FALLING_EDGE 0
 RISSING_EDGE 1
@@ -209,6 +204,18 @@ RISSING_EDGE 1
 [e E2999 . `uc
 FLAG_LOW 0
 FLAG_HIGH 1
+]
+"28 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER0/hal_timer0.c
+[e E3079 . `uc
+TIMER0_PRESCALER_VAULE_1_div_2 0
+TIMER0_PRESCALER_VAULE_1_div_4 1
+TIMER0_PRESCALER_VAULE_1_div_8 2
+TIMER0_PRESCALER_VAULE_1_div_16 3
+TIMER0_PRESCALER_VAULE_1_div_32 4
+TIMER0_PRESCALER_VAULE_1_div_64 5
+TIMER0_PRESCALER_VAULE_1_div_128 6
+TIMER0_PRESCALER_VAULE_1_div_256 7
+TIMER0_PRESCALER_OFF 8
 ]
 "21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/SevSeg/SevSeg.h
 [e E2997 . `uc
@@ -237,35 +244,30 @@ PIN7 7
 LED_OFF 0
 LED_ON 1
 ]
-"32 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/MCAL_Layer/mcal_layer_init.h
-[e E3746 . `uc
-TIMER0_PRESCALER_VAULE_1_div_2 0
-TIMER0_PRESCALER_VAULE_1_div_4 1
-TIMER0_PRESCALER_VAULE_1_div_8 2
-TIMER0_PRESCALER_VAULE_1_div_16 3
-TIMER0_PRESCALER_VAULE_1_div_32 4
-TIMER0_PRESCALER_VAULE_1_div_64 5
-TIMER0_PRESCALER_VAULE_1_div_128 6
-TIMER0_PRESCALER_VAULE_1_div_256 7
-TIMER0_PRESCALER_OFF 8
+"51 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/MCAL_Layer/mcal_layer_init.h
+[e E3774 . `uc
+TIMER1_PRESCALER_OFF 0
+TIMER1_PRESCALER_1_div_2 1
+TIMER1_PRESCALER_1_div_4 2
+TIMER1_PRESCALER_1_div_8 3
 ]
-"28 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER0/hal_timer0.c
+"29 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER1/hal_timer1.c
 [e E3079 . `uc
-TIMER0_PRESCALER_VAULE_1_div_2 0
-TIMER0_PRESCALER_VAULE_1_div_4 1
-TIMER0_PRESCALER_VAULE_1_div_8 2
-TIMER0_PRESCALER_VAULE_1_div_16 3
-TIMER0_PRESCALER_VAULE_1_div_32 4
-TIMER0_PRESCALER_VAULE_1_div_64 5
-TIMER0_PRESCALER_VAULE_1_div_128 6
-TIMER0_PRESCALER_VAULE_1_div_256 7
-TIMER0_PRESCALER_OFF 8
+TIMER1_PRESCALER_OFF 0
+TIMER1_PRESCALER_1_div_2 1
+TIMER1_PRESCALER_1_div_4 2
+TIMER1_PRESCALER_1_div_8 3
 ]
-"25 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
-[v _my_tt my_tt `(v  1 e 1 0 ]
-"31
+"125
+[e E3007 . `uc
+LOW_PRIORITY 0
+HIGH_PRIORITY 1
+]
+"23 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+[v _my_t1 my_t1 `(v  1 e 1 0 ]
+"30
 [v _main main `(i  1 e 2 0 ]
-"43
+"42
 [v _application_instiallize application_instiallize `(uc  1 e 1 0 ]
 "4 D:\C extend\programe Setup\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -396,7 +398,9 @@ TIMER0_PRESCALER_OFF 8
 [v _ADC_INTERRUPT_INIT ADC_INTERRUPT_INIT `(v  1 e 1 0 ]
 "136
 [v _TIMER0_IN_INT TIMER0_IN_INT `(v  1 e 1 0 ]
-"152
+"151
+[v _Timer1_IN_init Timer1_IN_init `(v  1 e 1 0 ]
+"168
 [v _EEPROM_ISR EEPROM_ISR `(v  1 e 1 0 ]
 "16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_interrupt_config.c
 [v _GLOBAL_INTERUPT_ENABLE GLOBAL_INTERUPT_ENABLE `(v  1 e 1 0 ]
@@ -404,7 +408,7 @@ TIMER0_PRESCALER_OFF 8
 [v _GLOBAL_INTERUPT_DISABLE GLOBAL_INTERUPT_DISABLE `(v  1 e 1 0 ]
 "36
 [v _GLOBAL_INTERRUPT_RETURN_STATE GLOBAL_INTERRUPT_RETURN_STATE `(uc  1 e 1 0 ]
-"50 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_interrupt_manager.c
+"45 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_interrupt_manager.c
 [v _InterruptManaerHigh InterruptManaerHigh `IIH(v  1 e 1 0 ]
 "16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/mcal_layer_init.c
 [v _mcal_layer_initialize mcal_layer_initialize `(uc  1 e 1 0 ]
@@ -418,33 +422,49 @@ TIMER0_PRESCALER_OFF 8
 [v _timer0_prescaler timer0_prescaler `T(uc  1 s 1 timer0_prescaler ]
 "89
 [v _timer0_interupt_handler_set timer0_interupt_handler_set `T(uc  1 s 1 timer0_interupt_handler_set ]
-"100
-[v _hal_timer0_init hal_timer0_init `(uc  1 e 1 0 ]
-"130
-[v _hal_timer0_read_value hal_timer0_read_value `(uc  1 e 1 0 ]
 "139
 [v _hal_timer0_write_value hal_timer0_write_value `(uc  1 e 1 0 ]
-[v i2_hal_timer0_write_value hal_timer0_write_value `(uc  1 e 1 0 ]
 "151
 [v _TIMER0_ISR TIMER0_ISR `(v  1 e 1 0 ]
+"29 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER1/hal_timer1.c
+[v _Timer1_clk_source Timer1_clk_source `T(uc  1 s 1 Timer1_clk_source ]
+"49
+[v _Timer1_Prescaler Timer1_Prescaler `T(uc  1 s 1 Timer1_Prescaler ]
+"65
+[v _Timer1_Operation_Mode Timer1_Operation_Mode `T(uc  1 s 1 Timer1_Operation_Mode ]
+"79
+[v _Timer1_Counter_synchronization Timer1_Counter_synchronization `T(uc  1 s 1 Timer1_Counter_synchronization ]
+"93
+[v _Timer1_RW_BitMode Timer1_RW_BitMode `T(uc  1 s 1 Timer1_RW_BitMode ]
+"108
+[v _Timer1_Interrupt_Handler Timer1_Interrupt_Handler `T(uc  1 s 1 Timer1_Interrupt_Handler ]
+"122
+[v _hal_Timer1_init hal_Timer1_init `(uc  1 e 1 0 ]
+"163
+[v _hal_Timer1_Read_value hal_Timer1_Read_value `(uc  1 e 1 0 ]
+"176
+[v _hal_Timer1_Write_value hal_Timer1_Write_value `(uc  1 e 1 0 ]
+"191
+[v _TIMER1_ISR TIMER1_ISR `(v  1 e 1 0 ]
 "24 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/app.h
 [v _ret ret `uc  1 e 1 0 ]
 "28 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/KeyPad/KeyPad.h
 [v _keypad_values keypad_values `[4][4]uc  1 e 16 0 ]
-[s S748 . 1 `uc 1 port 1 0 :3:0 
+[s S745 . 1 `uc 1 port 1 0 :3:0 
 `uc 1 pin 1 0 :3:3 
 `uc 1 status 1 0 :1:6 
 `uc 1 reserved 1 0 :1:7 
 ]
 "27 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/ECU_Layer/ecu_layer_init.h
-[v _led1 led1 `S748  1 e 1 0 ]
-[s S431 . 6 `*.37(v 1 timer0_interupt_handler 2 0 `uc 1 timer0_operation_mode 1 2 :1:0 
-`uc 1 timer0_edge_trigger 1 2 :1:1 
-`uc 1 timer0_register_size 1 2 :1:2 
-`E3168 1 timer0_prescaler 1 3 `us 1 timer0_PreLoaded_Value 2 4 ]
-"32 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/MCAL_Layer/mcal_layer_init.h
-[v _my_t my_t `S431  1 e 6 0 ]
-"21 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+[v _led1 led1 `S745  1 e 1 0 ]
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+"51 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw/MCAL_Layer/mcal_layer_init.h
+[v _t1c t1c `S426  1 e 6 0 ]
+"19 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
 [v _cnt cnt `us  1 e 2 0 ]
 "52 C:/Users/pc/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc/pic18f4620.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
@@ -583,7 +603,7 @@ TIMER0_PRESCALER_OFF 8
 [v _PIR2bits PIR2bits `VES1504  1 e 1 @4001 ]
 "2860
 [v _IPR2 IPR2 `VEuc  1 e 1 @4002 ]
-[s S1671 . 1 `uc 1 RD 1 0 :1:0 
+[s S1810 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -593,11 +613,11 @@ TIMER0_PRESCALER_OFF 8
 `uc 1 EEPGD 1 0 :1:7 
 ]
 "2947
-[s S1680 . 1 `uc 1 . 1 0 :6:0 
+[s S1819 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 EEFS 1 0 :1:6 
 ]
-[u S1683 . 1 `S1671 1 . 1 0 `S1680 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES1683  1 e 1 @4006 ]
+[u S1822 . 1 `S1810 1 . 1 0 `S1819 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES1822  1 e 1 @4006 ]
 "2992
 [v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
 "2999
@@ -675,7 +695,36 @@ TIMER0_PRESCALER_OFF 8
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
 "4662
 [v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
-[s S1861 . 1 `uc 1 T0PS 1 0 :3:0 
+[s S1987 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"5257
+[s S1990 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 T1RUN 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S1998 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S2004 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 T1RD16 1 0 :1:7 
+]
+[u S2009 . 1 `S1987 1 . 1 0 `S1990 1 . 1 0 `S1998 1 . 1 0 `S2004 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES2009  1 e 1 @4045 ]
+"5334
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"5341
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S1692 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -683,23 +732,23 @@ TIMER0_PRESCALER_OFF 8
 `uc 1 TMR0ON 1 0 :1:7 
 ]
 "5878
-[s S1868 . 1 `uc 1 T0PS0 1 0 :1:0 
+[s S1699 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 T016BIT 1 0 :1:6 
 ]
-[u S1874 . 1 `S1861 1 . 1 0 `S1868 1 . 1 0 ]
-[v _T0CONbits T0CONbits `VES1874  1 e 1 @4053 ]
+[u S1705 . 1 `S1692 1 . 1 0 `S1699 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES1705  1 e 1 @4053 ]
 "5940
 [v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
 "5947
 [v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
-[s S1170 . 1 `uc 1 . 1 0 :7:0 
+[s S1167 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "6329
-[s S1173 . 1 `uc 1 RBIP 1 0 :1:0 
+[s S1170 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -708,11 +757,11 @@ TIMER0_PRESCALER_OFF 8
 `uc 1 INTEDG0 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-[s S1182 . 1 `uc 1 . 1 0 :7:0 
+[s S1179 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 RBPU 1 0 :1:7 
 ]
-[u S1185 . 1 `S1170 1 . 1 0 `S1173 1 . 1 0 `S1182 1 . 1 0 ]
-[v _INTCON2bits INTCON2bits `VES1185  1 e 1 @4081 ]
+[u S1182 . 1 `S1167 1 . 1 0 `S1170 1 . 1 0 `S1179 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES1182  1 e 1 @4081 ]
 "6374
 [v _INTCON INTCON `VEuc  1 e 1 @4082 ]
 [s S357 . 1 `uc 1 RBIF 1 0 :1:0 
@@ -740,6 +789,8 @@ TIMER0_PRESCALER_OFF 8
 ]
 [u S379 . 1 `S357 1 . 1 0 `S366 1 . 1 0 `S375 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES379  1 e 1 @4082 ]
+"8127
+[v _T1RUN T1RUN `VEb  1 e 0 @32366 ]
 "20 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/ADC/hal_adc.c
 [v _ADC_InterruptHandler ADC_InterruptHandler `*.37(v  1 e 2 0 ]
 "9 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/GPIO/hal_gpio.c
@@ -776,100 +827,121 @@ TIMER0_PRESCALER_OFF 8
 [v _timer0_interupt_handler timer0_interupt_handler `*.37(v  1 e 2 0 ]
 "17
 [v _PreLoaded_Value PreLoaded_Value `VEus  1 s 2 PreLoaded_Value ]
-"31 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+"16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER1/hal_timer1.c
+[v _Preloaded_Value Preloaded_Value `us  1 s 2 Preloaded_Value ]
+"17
+[v _RW_Mode RW_Mode `uc  1 s 1 RW_Mode ]
+"18
+[v _Timer1_Interrupt_Handler_call Timer1_Interrupt_Handler_call `*.37(v  1 e 2 0 ]
+"30 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
 [v _main main `(i  1 e 2 0 ]
 {
-"39
+"38
 } 0
-"130 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER0/hal_timer0.c
-[v _hal_timer0_read_value hal_timer0_read_value `(uc  1 e 1 0 ]
+"163 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER1/hal_timer1.c
+[v _hal_Timer1_Read_value hal_Timer1_Read_value `(uc  1 e 1 0 ]
 {
-[v hal_timer0_read_value@Value Value `*.30us  1 p 1 13 ]
-"137
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v hal_Timer1_Read_value@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
+[v hal_Timer1_Read_value@Value Value `*.30us  1 p 1 14 ]
+"174
 } 0
-"43 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+"42 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
 [v _application_instiallize application_instiallize `(uc  1 e 1 0 ]
 {
-"47
+"46
 } 0
 "16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/mcal_layer_init.c
 [v _mcal_layer_initialize mcal_layer_initialize `(uc  1 e 1 0 ]
 {
-"20
+"22
 } 0
-"100 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER0/hal_timer0.c
-[v _hal_timer0_init hal_timer0_init `(uc  1 e 1 0 ]
+"122 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER1/hal_timer1.c
+[v _hal_Timer1_init hal_Timer1_init `(uc  1 e 1 0 ]
 {
-"101
-[v hal_timer0_init@ret ret `uc  1 a 1 21 ]
-[s S431 . 6 `*.37(v 1 timer0_interupt_handler 2 0 `uc 1 timer0_operation_mode 1 2 :1:0 
-`uc 1 timer0_edge_trigger 1 2 :1:1 
-`uc 1 timer0_register_size 1 2 :1:2 
-`E3168 1 timer0_prescaler 1 3 `us 1 timer0_PreLoaded_Value 2 4 ]
-"100
-[v hal_timer0_init@timer0 timer0 `*.30CS431  1 p 1 20 ]
-"119
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v hal_Timer1_init@Timer1 Timer1 `*.30CS426  1 p 1 20 ]
+"151
 } 0
-"28
-[v _timer0_register_size timer0_register_size `T(uc  1 s 1 timer0_register_size ]
+"176
+[v _hal_Timer1_Write_value hal_Timer1_Write_value `(uc  1 e 1 0 ]
 {
-[s S431 . 6 `*.37(v 1 timer0_interupt_handler 2 0 `uc 1 timer0_operation_mode 1 2 :1:0 
-`uc 1 timer0_edge_trigger 1 2 :1:1 
-`uc 1 timer0_register_size 1 2 :1:2 
-`E3168 1 timer0_prescaler 1 3 `us 1 timer0_PreLoaded_Value 2 4 ]
-[v timer0_register_size@timer0 timer0 `*.30CS431  1 p 1 13 ]
-"39
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v hal_Timer1_Write_value@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
+[v hal_Timer1_Write_value@Value Value `us  1 p 2 14 ]
+"187
 } 0
-"64
-[v _timer0_prescaler timer0_prescaler `T(uc  1 s 1 timer0_prescaler ]
+"29
+[v _Timer1_clk_source Timer1_clk_source `T(uc  1 s 1 Timer1_clk_source ]
 {
-[s S431 . 6 `*.37(v 1 timer0_interupt_handler 2 0 `uc 1 timer0_operation_mode 1 2 :1:0 
-`uc 1 timer0_edge_trigger 1 2 :1:1 
-`uc 1 timer0_register_size 1 2 :1:2 
-`E3168 1 timer0_prescaler 1 3 `us 1 timer0_PreLoaded_Value 2 4 ]
-[v timer0_prescaler@timer0 timer0 `*.30CS431  1 p 1 13 ]
-"88
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v Timer1_clk_source@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
+"47
 } 0
-"40
-[v _timer0_operation_mode timer0_operation_mode `T(uc  1 s 1 timer0_operation_mode ]
+"93
+[v _Timer1_RW_BitMode Timer1_RW_BitMode `T(uc  1 s 1 Timer1_RW_BitMode ]
 {
-[s S431 . 6 `*.37(v 1 timer0_interupt_handler 2 0 `uc 1 timer0_operation_mode 1 2 :1:0 
-`uc 1 timer0_edge_trigger 1 2 :1:1 
-`uc 1 timer0_register_size 1 2 :1:2 
-`E3168 1 timer0_prescaler 1 3 `us 1 timer0_PreLoaded_Value 2 4 ]
-[v timer0_operation_mode@timer0 timer0 `*.30CS431  1 p 1 13 ]
-"51
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v Timer1_RW_BitMode@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
+"105
 } 0
-"89
-[v _timer0_interupt_handler_set timer0_interupt_handler_set `T(uc  1 s 1 timer0_interupt_handler_set ]
+"49
+[v _Timer1_Prescaler Timer1_Prescaler `T(uc  1 s 1 Timer1_Prescaler ]
 {
-[s S431 . 6 `*.37(v 1 timer0_interupt_handler 2 0 `uc 1 timer0_operation_mode 1 2 :1:0 
-`uc 1 timer0_edge_trigger 1 2 :1:1 
-`uc 1 timer0_register_size 1 2 :1:2 
-`E3168 1 timer0_prescaler 1 3 `us 1 timer0_PreLoaded_Value 2 4 ]
-[v timer0_interupt_handler_set@timer0 timer0 `*.30CS431  1 p 1 13 ]
-"96
-} 0
-"52
-[v _timer0_edge_trigger timer0_edge_trigger `T(uc  1 s 1 timer0_edge_trigger ]
-{
-[s S431 . 6 `*.37(v 1 timer0_interupt_handler 2 0 `uc 1 timer0_operation_mode 1 2 :1:0 
-`uc 1 timer0_edge_trigger 1 2 :1:1 
-`uc 1 timer0_register_size 1 2 :1:2 
-`E3168 1 timer0_prescaler 1 3 `us 1 timer0_PreLoaded_Value 2 4 ]
-[v timer0_edge_trigger@timer0 timer0 `*.30CS431  1 p 1 13 ]
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v Timer1_Prescaler@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
 "63
 } 0
-"139
-[v _hal_timer0_write_value hal_timer0_write_value `(uc  1 e 1 0 ]
+"65
+[v _Timer1_Operation_Mode Timer1_Operation_Mode `T(uc  1 s 1 Timer1_Operation_Mode ]
 {
-[v hal_timer0_write_value@Value Value `us  1 p 2 13 ]
-"147
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v Timer1_Operation_Mode@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
+"77
 } 0
-"136 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_internal_interrupt.c
-[v _TIMER0_IN_INT TIMER0_IN_INT `(v  1 e 1 0 ]
+"108
+[v _Timer1_Interrupt_Handler Timer1_Interrupt_Handler `T(uc  1 s 1 Timer1_Interrupt_Handler ]
 {
-"144
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v Timer1_Interrupt_Handler@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
+"116
+} 0
+"151 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_internal_interrupt.c
+[v _Timer1_IN_init Timer1_IN_init `(v  1 e 1 0 ]
+{
+"160
 } 0
 "31
 [v _Module_INTERRUPT_ENABLE Module_INTERRUPT_ENABLE `(uc  1 e 1 0 ]
@@ -899,11 +971,22 @@ TIMER0_PRESCALER_OFF 8
 {
 "34
 } 0
+"79 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER1/hal_timer1.c
+[v _Timer1_Counter_synchronization Timer1_Counter_synchronization `T(uc  1 s 1 Timer1_Counter_synchronization ]
+{
+[s S426 . 6 `*.37(v 1 Timer1_Interrupt_Handler 2 0 `E3196 1 Timer1_Prescaler 1 2 `uc 1 Timer1_clk_source 1 3 :1:0 
+`uc 1 Timer1_Operation_Mode 1 3 :1:1 
+`uc 1 Timer1_RW_BitMode 1 3 :1:2 
+`uc 1 Timer1_Counter_synchronization 1 3 :1:3 
+`us 1 Timer1_Preloaded_value 2 4 ]
+[v Timer1_Counter_synchronization@Timer1 Timer1 `*.30CS426  1 p 1 13 ]
+"91
+} 0
 "16 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/ecu_layer_init.c
 [v _ecu_layer_initialize ecu_layer_initialize `(uc  1 e 1 0 ]
 {
 "17
-[v ecu_layer_initialize@ret ret `uc  1 a 1 4 ]
+[v ecu_layer_initialize@ret ret `uc  1 a 1 23 ]
 "20
 } 0
 "18 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\ECU_Layer/led/led.c
@@ -915,18 +998,18 @@ TIMER0_PRESCALER_OFF 8
 `uc 1 logic 1 0 :1:7 
 ]
 "21
-[v led_initialize@led led `S27  1 a 1 3 ]
+[v led_initialize@led led `S27  1 a 1 2 ]
 "20
-[v led_initialize@ret ret `uc  1 a 1 2 ]
+[v led_initialize@ret ret `uc  1 a 1 1 ]
 "26
-[v led_initialize@logic_state logic_state `E2997  1 a 1 1 ]
-[s S748 . 1 `uc 1 port 1 0 :3:0 
+[v led_initialize@logic_state logic_state `E2997  1 a 1 0 ]
+[s S745 . 1 `uc 1 port 1 0 :3:0 
 `uc 1 pin 1 0 :3:3 
 `uc 1 status 1 0 :1:6 
 `uc 1 reserved 1 0 :1:7 
 ]
 "18
-[v led_initialize@led_config led_config `*.30CS748  1 p 1 21 ]
+[v led_initialize@led_config led_config `*.30CS745  1 p 1 21 ]
 "20
 [v led_initialize@F3079 F3079 `S27  1 s 1 F3079 ]
 "35
@@ -961,10 +1044,20 @@ TIMER0_PRESCALER_OFF 8
 [v gpio_pin_direction_intialize@_pin_config _pin_config `*.30CS27  1 p 1 13 ]
 "43
 } 0
-"50 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_interrupt_manager.c
+"45 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_interrupt_manager.c
 [v _InterruptManaerHigh InterruptManaerHigh `IIH(v  1 e 1 0 ]
 {
 "138
+} 0
+"191 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER1/hal_timer1.c
+[v _TIMER1_ISR TIMER1_ISR `(v  1 e 1 0 ]
+{
+"200
+} 0
+"23 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
+[v _my_t1 my_t1 `(v  1 e 1 0 ]
+{
+"25
 } 0
 "151 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/TIMER0/hal_timer0.c
 [v _TIMER0_ISR TIMER0_ISR `(v  1 e 1 0 ]
@@ -972,15 +1065,10 @@ TIMER0_PRESCALER_OFF 8
 "155
 } 0
 "139
-[v i2_hal_timer0_write_value hal_timer0_write_value `(uc  1 e 1 0 ]
+[v _hal_timer0_write_value hal_timer0_write_value `(uc  1 e 1 0 ]
 {
-[v i2hal_timer0_write_value@Value Value `us  1 p 2 0 ]
+[v hal_timer0_write_value@Value Value `us  1 p 2 0 ]
 "147
-} 0
-"25 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\app.c
-[v _my_tt my_tt `(v  1 e 1 0 ]
-{
-"27
 } 0
 "422 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_external_interrupt.c
 [v _RB6_R_ISR RB6_R_ISR `(v  1 e 1 0 ]
@@ -1017,10 +1105,10 @@ TIMER0_PRESCALER_OFF 8
 {
 "361
 } 0
-"152 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_internal_interrupt.c
+"168 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/INTERRUPT/mcal_internal_interrupt.c
 [v _EEPROM_ISR EEPROM_ISR `(v  1 e 1 0 ]
 {
-"155
+"171
 } 0
 "187 D:\Courses\Embeded systems diploma\part 2\project(s)\app_1\sw\MCAL_Layer/ADC/hal_adc.c
 [v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
