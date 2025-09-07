@@ -135,5 +135,17 @@ RB7_F_ISR();
   if((TIMER1_FLAG == INTERRUPR_OCUUR) && (TIMER1_Enable == INTERRUPT_ENABLE)){
    TIMER1_ISR();
  }
+  /****************************
+  *          TIMER2          *
+  ****************************/
+  if((TIMER2_FLAG == INTERRUPR_OCUUR) && (TIMER2_Enable == INTERRUPT_ENABLE)){
+   TIMER2_ISR();
+ }
+  /****************************
+  *          TIMER3          *
+  ****************************/
+  if((TIMER3_FLAG == INTERRUPR_OCUUR) && (TIMER3_Enable == INTERRUPT_ENABLE)){
+   TIMER3_ISR();
+ }
 }
 #endif

@@ -139,7 +139,6 @@ if(Timer1 == NULL){
     Timer1_RW_BitMode(Timer1);                                                    /** R/W  8/16 Bit  */
     hal_Timer1_Write_value(Timer1,Timer1->Timer1_Preloaded_value);         /**  Reloaded Value Reg Loading  */
     RW_Mode          = Timer1->Timer1_RW_BitMode;                               /** R/w Value copy  */
-    Preloaded_Value  = Timer1->Timer1_Preloaded_value;                         /** Preloaded_Value Copy  */
 
     /** IN init  */
     #if  (TIMER1_IN_ENABLE)
@@ -169,6 +168,7 @@ if(Value == NULL){
      if(Timer1->Timer1_RW_BitMode == TIMER1_16BIT_RW_MODE){
      *Value += ((uint16)TIMER1_HIGH_BYTE_REG << ONE_BYTE_SHIFT);
       }
+      Preloaded_Value  = Timer1->Timer1_Preloaded_value;                         /** Preloaded_Value Copy  */
 }
 return ret;
 }

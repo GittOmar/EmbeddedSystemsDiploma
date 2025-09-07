@@ -69,6 +69,26 @@
 #define  TIMER1_ENABLE_BIT     bit_0
 #define  TIMER1_FLAG_BIT       bit_0
 #define  TIMER1_PRIORITY_BIT   bit_0
+/****************************
+ *          TIMER2          *
+ ****************************/
+#define  TIMER2_ENABLE_REG     SECOND_REG
+#define  TIMER2_FLAG_REG       SECOND_REG
+#define  TIMER2_PRIORITY_REG   SECOND_REG
+
+#define  TIMER2_ENABLE_BIT     bit_1
+#define  TIMER2_FLAG_BIT       bit_1
+#define  TIMER2_PRIORITY_BIT   bit_1
+/****************************
+ *          TIMER3          *
+ ****************************/
+#define  TIMER3_ENABLE_REG     FIRST_REG
+#define  TIMER3_FLAG_REG       FIRST_REG
+#define  TIMER3_PRIORITY_REG   FIRST_REG
+
+#define  TIMER3_ENABLE_BIT     bit_1
+#define  TIMER3_FLAG_BIT       bit_1
+#define  TIMER3_PRIORITY_BIT   bit_1
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/        

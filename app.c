@@ -13,6 +13,7 @@
  *                Includes               *
  *****************************************/
 #include "app.h"
+#include "MCAL_Layer/TIMER3/hal_timer3.h"
 /*****************************************
  *                Code                   *
  *****************************************/
@@ -20,8 +21,8 @@
 /****************************
  *      ISR Functions        *
  ****************************/
-void my_t1(){
-// led_turn_toggle(&(led1));
+void my_t2(){
+led_turn_toggle(&(led1));
 }
 
 /****************************
@@ -30,9 +31,7 @@ void my_t1(){
 int main() {
     ret = application_instiallize();
     while (1) {
-    hal_Timer1_Write_value(&(t1c), 0); 
-     __delay_ms(1000);
-     hal_Timer1_Read_value(&(t1c), &cnt);
+        hal_Timer3_Read_value(&(t3), &cnt);
     }
     return ret;
 }

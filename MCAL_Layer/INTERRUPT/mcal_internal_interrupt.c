@@ -161,6 +161,38 @@ void           ADC_INTERRUPT_DEINIT(void){
  void Timer1_IN_deinit(){
   Module_INTERRUPT_DISABLE(TIMER1_ENABLE_REG,TIMER1_ENABLE_BIT);
  }
+  /****************************
+  *          TImer2          *
+  ****************************/
+ void Timer2_IN_init(priority_t Timer2_priority){
+  GLOBAL_INTERUPT_DISABLE();
+  Module_INTERRUPT_ClEAR_FLAG(TIMER2_FLAG_REG,TIMER2_FLAG_BIT);  
+  #if  (PERIORITY_ENABLE)      
+  INTERRUPT_PeriorityEnable();     // priority enable           
+  SET_Interrupt_PRIORITY(Timer2_priority,TIMER2_PRIORITY_REG,TIMER2_PRIORITY_BIT);        // priority set 
+  #endif                                        
+  Module_INTERRUPT_ENABLE(TIMER2_ENABLE_REG,TIMER2_ENABLE_BIT);
+  GLOBAL_INTERUPT_ENABLE();
+ }
+ void Timer2_IN_deinit(){
+  Module_INTERRUPT_DISABLE(TIMER2_ENABLE_REG,TIMER2_ENABLE_BIT);
+ }
+  /****************************
+  *          TImer3          *
+  ****************************/
+ void Timer3_IN_init(priority_t Timer3_priority){
+  GLOBAL_INTERUPT_DISABLE();
+  Module_INTERRUPT_ClEAR_FLAG(TIMER3_FLAG_REG,TIMER3_FLAG_BIT);  
+  #if  (PERIORITY_ENABLE)      
+  INTERRUPT_PeriorityEnable();     // priority enable           
+  SET_Interrupt_PRIORITY(Timer3_priority,TIMER3_PRIORITY_REG,TIMER3_PRIORITY_BIT);        // priority set 
+  #endif                                        
+  Module_INTERRUPT_ENABLE(TIMER3_ENABLE_REG,TIMER3_ENABLE_BIT);
+  GLOBAL_INTERUPT_ENABLE();
+ }
+ void Timer3_IN_deinit(){
+  Module_INTERRUPT_DISABLE(TIMER3_ENABLE_REG,TIMER3_ENABLE_BIT);
+ }
 /*****************************************
  *                ISR                    *
  *****************************************/
