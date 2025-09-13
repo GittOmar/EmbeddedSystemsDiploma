@@ -147,5 +147,11 @@ RB7_F_ISR();
   if((TIMER3_FLAG == INTERRUPR_OCUUR) && (TIMER3_Enable == INTERRUPT_ENABLE)){
    TIMER3_ISR();
  }
+  /****************************
+  *          CPP1          *
+  ****************************/
+  if((CCP1_FLAG == INTERRUPR_OCUUR) && (CCP1_Enable == INTERRUPT_ENABLE)){
+   CCP1_ISR();
+ }
 }
 #endif

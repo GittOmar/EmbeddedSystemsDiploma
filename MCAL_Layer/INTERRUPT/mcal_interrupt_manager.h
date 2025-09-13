@@ -50,6 +50,9 @@
 
 #define  TIMER3_FLAG                      (PIR2bits.TMR3IF)  
 #define  TIMER3_Enable                    (PIE2bits.TMR3IE)  
+
+#define  CCP1_FLAG                      (PIR1bits.CCP1IF)  
+#define  CCP1_Enable                    (PIE1bits.CCP1IE)  
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/
@@ -90,4 +93,5 @@ void RB7_F_ISR(void);
  void TIMER1_ISR(void);
  void TIMER2_ISR(void);
  void TIMER3_ISR(void);
+ void CCP1_ISR(void);
 #endif /* mcal_interrupt_manager_H_ */

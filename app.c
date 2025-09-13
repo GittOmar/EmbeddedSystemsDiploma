@@ -13,25 +13,28 @@
  *                Includes               *
  *****************************************/
 #include "app.h"
-#include "MCAL_Layer/TIMER3/hal_timer3.h"
 /*****************************************
  *                Code                   *
  *****************************************/
- uint16 cnt = 0;
+volatile void comp_PWMgenrator(void);                  
+
 /****************************
  *      ISR Functions        *
  ****************************/
 void my_t2(){
-led_turn_toggle(&(led1));
+
 }
+
+
 
 /****************************
  *          Main            *
  ****************************/
 int main() {
     ret = application_instiallize();
+     hal_ccp1_comparter_10HZ_wave(64);
     while (1) {
-        hal_Timer3_Read_value(&(t3), &cnt);
+
     }
     return ret;
 }

@@ -43,14 +43,14 @@
 
 
 // Unsigned types (stdint.h style)
-typedef unsigned char   uint8;   // Range: 0 to 255
-typedef unsigned short  uint16;  // Range: 0 to 65,535
-typedef unsigned int    uint32;  // Range: 0 to 4,294,967,295
+typedef unsigned char        uint8;   // Range: 0 to 255
+typedef unsigned short       uint16;  // Range: 0 to 65,535
+typedef unsigned long int    uint32;  // Range: 0 to 4,294,967,295
 
 // Signed types (stdint.h style)
-typedef signed char     sint8;   // Range: -128 to +127
-typedef signed short    sint16;  // Range: -32,768 to +32,767
-typedef signed int      sint32;  // Range: -2,147,483,648 to +2,147,483,647
+typedef signed char          sint8;   // Range: -128 to +127
+typedef signed short         sint16;  // Range: -32,768 to +32,767
+typedef signed long int      sint32;  // Range: -2,147,483,648 to +2,147,483,647
 
 typedef uint8 Std_RetuenType;
 /*****************************************

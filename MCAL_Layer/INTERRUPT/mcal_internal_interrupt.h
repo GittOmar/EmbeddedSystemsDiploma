@@ -89,6 +89,16 @@
 #define  TIMER3_ENABLE_BIT     bit_1
 #define  TIMER3_FLAG_BIT       bit_1
 #define  TIMER3_PRIORITY_BIT   bit_1
+/****************************
+ *           CCP1           *
+ ****************************/
+#define  CCP1_ENABLE_REG     SECOND_REG
+#define  CCP1_FLAG_REG       SECOND_REG
+#define  CCP1_PRIORITY_REG   SECOND_REG
+
+#define  CCP1_ENABLE_BIT     bit_2
+#define  CCP1_FLAG_BIT       bit_2
+#define  CCP1_PRIORITY_BIT   bit_2
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/        
