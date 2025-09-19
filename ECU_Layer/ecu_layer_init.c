@@ -15,6 +15,6 @@
  *****************************************/
 Std_RetuenType ecu_layer_initialize(){
      Std_RetuenType ret = E_OK;
-     ret &= led_initialize(&led1);
+     ret &= led_initialize(&led);
      return ret;
 }

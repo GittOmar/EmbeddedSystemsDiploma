@@ -14,6 +14,7 @@
 #include "ECU_Layer/ecu_layer_init.h"
 #include "MCAL_Layer/mcal_layer_init.h"
 #include "MCAL_Layer/std_types.h"
+#include "MCAL_Layer/compilar.h"
 /*****************************************
  *           Macro Declarations          *
  *****************************************/
@@ -22,6 +23,7 @@
  *       User Defined Varibles         *
  *****************************************/ 
  Std_RetuenType ret = E_OK; 
+ uint16 value;
 /*****************************************
  *          Data Type Declarations       *
  *****************************************/

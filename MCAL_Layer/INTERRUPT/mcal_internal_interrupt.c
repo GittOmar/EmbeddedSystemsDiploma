@@ -209,6 +209,38 @@ void           ADC_INTERRUPT_DEINIT(void){
  void CCP1_IN_deinit(){
   Module_INTERRUPT_DISABLE(CCP1_ENABLE_REG,CCP1_ENABLE_BIT);
  }
+ /****************************
+  *          TX            *
+  ****************************/
+  void TX_IN_init(priority_t TX_priority){
+  GLOBAL_INTERUPT_DISABLE();
+  // Module_INTERRUPT_ClEAR_FLAG(TX_FLAG_REG,TX_FLAG_BIT);  
+  #if  (PERIORITY_ENABLE)      
+  INTERRUPT_PeriorityEnable();     // priority enable           
+  SET_Interrupt_PRIORITY(TX_priority,TX_PRIORITY_REG,TX_PRIORITY_BIT);        // priority set 
+  #endif                                        
+  Module_INTERRUPT_ENABLE(TX_ENABLE_REG,TX_ENABLE_BIT);
+  GLOBAL_INTERUPT_ENABLE();
+ }
+ void TX_IN_deinit(){
+  Module_INTERRUPT_DISABLE(TX_ENABLE_REG,TX_ENABLE_BIT);
+ }
+ /****************************
+  *          RX            *
+  ****************************/
+  void RX_IN_init(priority_t RX_priority){
+  GLOBAL_INTERUPT_DISABLE();
+  // Module_INTERRUPT_ClEAR_FLAG(RX_FLAG_REG,RX_FLAG_BIT);  
+  #if  (PERIORITY_ENABLE)      
+  INTERRUPT_PeriorityEnable();     // priority enable           
+  SET_Interrupt_PRIORITY(RX_priority,RX_PRIORITY_REG,RX_PRIORITY_BIT);        // priority set 
+  #endif                                        
+  Module_INTERRUPT_ENABLE(RX_ENABLE_REG,RX_ENABLE_BIT);
+  GLOBAL_INTERUPT_ENABLE();
+ }
+ void RX_IN_deinit(){
+  Module_INTERRUPT_DISABLE(RX_ENABLE_REG,RX_ENABLE_BIT);
+ }
 /*****************************************
  *                ISR                    *
  *****************************************/

@@ -13,6 +13,10 @@
  *                Includes               *
  *****************************************/
 #include "app.h"
+#include "ECU_Layer/led/led.h"
+#include "MCAL_Layer/EUSART/eusart.h"
+#include <builtins.h>
+
 /*****************************************
  *                Code                   *
  *****************************************/
@@ -21,6 +25,7 @@
  *      ISR Functions        *
  ****************************/
 void my_t2(){
+    
 
 }
 
@@ -31,9 +36,13 @@ void my_t2(){
  ****************************/
 int main() {
     ret = application_instiallize();
-     hal_ccp1_comparter_10HZ_wave(64);
     while (1) {
-
+        hal_EUSART_NON_BLOCKING_READ(&(tr), &value);
+        if(value == 'T'){
+        led_turn_toggle(&(led));  
+        hal_EUSART_NON_BLOCKING_WRITE(&(tr), 'R');
+        value = 0 ;
+        }
     }
     return ret;
 }

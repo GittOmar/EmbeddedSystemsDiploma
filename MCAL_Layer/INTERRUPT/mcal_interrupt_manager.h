@@ -33,26 +33,32 @@
 /****************************
  *          INTERNAL        *
  ****************************/
-#define  EEPROM_FLAG                      (PIR2bits.EEIF) 
-#define  EEPROM_Enable                    (PIE2bits.EEIE)
-
-#define  ADC_FLAG                         (PIR1bits.ADIF)  
-#define  ADC_Enable                       (PIE1bits.ADIE)
-
-#define  TIMER0_FLAG                      (INTCONbits.TMR0IF)  
-#define  TIMER0_Enable                    (INTCONbits.TMR0IE)  
-
-#define  TIMER1_FLAG                      (PIR1bits.TMR1IF)  
-#define  TIMER1_Enable                    (PIE1bits.TMR1IE)  
-
-#define  TIMER2_FLAG                      (PIR1bits.TMR2IF)  
-#define  TIMER2_Enable                    (PIE1bits.TMR2IE)  
-
-#define  TIMER3_FLAG                      (PIR2bits.TMR3IF)  
-#define  TIMER3_Enable                    (PIE2bits.TMR3IE)  
-
-#define  CCP1_FLAG                      (PIR1bits.CCP1IF)  
-#define  CCP1_Enable                    (PIE1bits.CCP1IE)  
+#define  EEPROM_FLAG                         (PIR2bits.EEIF) 
+#define  EEPROM_Enable                       (PIE2bits.EEIE)
+   
+#define  ADC_FLAG                            (PIR1bits.ADIF)  
+#define  ADC_Enable                          (PIE1bits.ADIE)
+   
+#define  TIMER0_FLAG                         (INTCONbits.TMR0IF)  
+#define  TIMER0_Enable                       (INTCONbits.TMR0IE)  
+   
+#define  TIMER1_FLAG                         (PIR1bits.TMR1IF)  
+#define  TIMER1_Enable                       (PIE1bits.TMR1IE)  
+   
+#define  TIMER2_FLAG                         (PIR1bits.TMR2IF)  
+#define  TIMER2_Enable                       (PIE1bits.TMR2IE)  
+   
+#define  TIMER3_FLAG                         (PIR2bits.TMR3IF)  
+#define  TIMER3_Enable                       (PIE2bits.TMR3IE)  
+   
+#define  CCP1_FLAG                           (PIR1bits.CCP1IF)  
+#define  CCP1_Enable                         (PIE1bits.CCP1IE)  
+    
+#define  TX_FLAG                             (PIR1bits.TXIF)  
+#define  TX_Enable                           (PIE1bits.TXIE)  
+       
+#define  RX_FLAG                             (PIR1bits.RCIF)  
+#define  RX_Enable                           (PIE1bits.RCIE)  
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/
@@ -94,4 +100,6 @@ void RB7_F_ISR(void);
  void TIMER2_ISR(void);
  void TIMER3_ISR(void);
  void CCP1_ISR(void);
+ void TX_ISR(void);
+ void RX_ISR(void);
 #endif /* mcal_interrupt_manager_H_ */

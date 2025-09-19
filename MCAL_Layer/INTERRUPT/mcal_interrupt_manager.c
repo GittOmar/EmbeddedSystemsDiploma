@@ -153,5 +153,17 @@ RB7_F_ISR();
   if((CCP1_FLAG == INTERRUPR_OCUUR) && (CCP1_Enable == INTERRUPT_ENABLE)){
    CCP1_ISR();
  }
+  /****************************
+  *          TX               *
+  ****************************/
+  if((TX_FLAG == INTERRUPR_OCUUR) && (TX_Enable == INTERRUPT_ENABLE)){
+   TX_ISR();
+ }
+  /****************************
+  *          RX               *
+  ****************************/
+  if((RX_FLAG == INTERRUPR_OCUUR) && (RX_Enable == INTERRUPT_ENABLE)){
+   RX_ISR();
+ }
 }
 #endif

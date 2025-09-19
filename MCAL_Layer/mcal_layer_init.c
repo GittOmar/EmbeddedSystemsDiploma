@@ -15,6 +15,10 @@
  *****************************************/
 Std_RetuenType mcal_layer_initialize(void){
     Std_RetuenType ret = E_OK;
-    hal_ccp1_init(&(comp));
+   
+   hal_EUSART_INIT(&(tr));
+
+
+
     return ret;
 }

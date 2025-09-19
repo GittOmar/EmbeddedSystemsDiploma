@@ -1,37 +1,37 @@
 /*******************************************************************************
- * @file       ecu_layer_init.h
+ * @file       eusart_cfg.h
  * @brief      Driver/Module Description
- * @date       2025/08/05
- * @time       13:14
+ * @date       2025/09/15
+ * @time       17:54
  * @author     Omar Ibrahim
  ******************************************************************************/
 
-#ifndef ecu_layer_init_H_
-#define ecu_layer_init_H_
+#ifndef eusart_cfg_H_
+#define eusart_cfg_H_
+
 /*****************************************
- *                Includes               *
+ *                 Includes              *
  *****************************************/
-#include "./led/led.h"
-#include "./push_button/push_button.h"
-#include "./relay/ecu_relay.h"
-#include "./H_Bridge/./H_Bridge.h"
-#include "./SevSeg/SevSeg.h"
-#include "./KeyPad/KeyPad.h"
-#include "./Lcd/lcd.h"
+
+
 /*****************************************
- *       User Defined Varibles         *
+ *           Macro Declarations          *
  *****************************************/
+
+
 /*****************************************
- *              Modeules                 *
+ *       Macro Function Declarations     *
  *****************************************/
-led_t led = {
-   .port = PORTA_INDEX ,
-   .pin = PIN0,
-   .status = LED_ON
-};
+
+
+/*****************************************
+ *          Data Type Declarations       *
+ *****************************************/
+
+
 /*****************************************
  *        Function Declarations          *
  *****************************************/
-Std_RetuenType ecu_layer_initialize();
 
-#endif /* ecu_layer_init_H_ */
+
+#endif /* eusart_cfg_H_ */

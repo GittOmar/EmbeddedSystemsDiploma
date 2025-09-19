@@ -99,6 +99,26 @@
 #define  CCP1_ENABLE_BIT     bit_2
 #define  CCP1_FLAG_BIT       bit_2
 #define  CCP1_PRIORITY_BIT   bit_2
+/****************************
+ *           TX           *
+ ****************************/
+#define  TX_ENABLE_REG     SECOND_REG
+#define  TX_FLAG_REG       SECOND_REG
+#define  TX_PRIORITY_REG   SECOND_REG
+
+#define  TX_ENABLE_BIT     bit_4
+#define  TX_FLAG_BIT       bit_4
+#define  TX_PRIORITY_BIT   bit_4
+/****************************
+ *           RX           *
+ ****************************/
+#define  RX_ENABLE_REG     SECOND_REG
+#define  RX_FLAG_REG       SECOND_REG
+#define  RX_PRIORITY_REG   SECOND_REG
+
+#define  RX_ENABLE_BIT     bit_5
+#define  RX_FLAG_BIT       bit_5
+#define  RX_PRIORITY_BIT   bit_5
 /*****************************************
  *       Macro Function Declarations     *
  *****************************************/        
